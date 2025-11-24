@@ -1,7 +1,100 @@
+/* ===== General ===== */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #fdfdfd;
     color: #222;
     line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background: #111;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* ===== Navigation ===== */
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section.light {
+    background: #f3f3f3;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+/* ===== Grids ===== */
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== Links ===== */
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 600px) {
+    .title { font-size: 2rem; }
 }
